@@ -278,13 +278,38 @@ export default {
         this.hours[index].close !== '24hrs' &&
         !(
           this.type === 'select' &&
+          this.timeIncrement === 5 &&
+          this.hours[index].close === '2355'
+        ) &&
+        !(
+          this.type === 'select' &&
+          this.timeIncrement === 10 &&
+          this.hours[index].close === '2350'
+        ) &&
+        !(
+          this.type === 'select' &&
           this.timeIncrement === 15 &&
           this.hours[index].close === '2345'
         ) &&
         !(
           this.type === 'select' &&
+          this.timeIncrement === 20 &&
+          this.hours[index].close === '2340'
+        ) &&
+        !(
+          this.type === 'select' &&
           this.timeIncrement === 30 &&
           this.hours[index].close === '2330'
+        ) &&
+        !(
+          this.type === 'select' &&
+          this.timeIncrement === 40 &&
+          this.hours[index].close === '2320'
+        ) &&
+        !(
+          this.type === 'select' &&
+          this.timeIncrement === 50 &&
+          this.hours[index].close === '2310'
         ) &&
         !(
           this.type === 'select' &&
