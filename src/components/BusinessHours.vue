@@ -44,7 +44,7 @@ export default {
       type: Number,
       default: 30,
       validator: function(value) {
-        return [15, 30, 60].indexOf(value) !== -1;
+        return [5, 10, 15, 20, 30, 40, 50, 60].indexOf(value) !== -1;
       }
     },
     color: {
